@@ -1,7 +1,7 @@
 # bootloader32
 
 ## Overview
-`os_bootloqder` is a simple operating system bootloader that demonstrates how to:
+`os_bootloader` is a simple operating system bootloader that demonstrates how to:
 - Switch the CPU into 32‑bit protected mode
 - Configure the Global Descriptor Table (GDT)
 - Provide the groundwork for building a custom operating system
@@ -30,6 +30,6 @@ This project is intended for educational purposes and as a starting point for lo
 Clone the repository and build the bootloader:
 
 ```bash
-git clone https://github.com/er0ex/bootloader32.git
-cd bootloader32
+git clone https://github.com/er0ex/os_bootloader.git
+cd os_bootloader
 make
