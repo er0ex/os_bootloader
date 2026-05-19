@@ -1,0 +1,21 @@
+CASM=nasm
+BIT=bin
+LD=i386-elf-ld
+
+BOOTLOADER=src/boot/boot.asm
+BOOTLOADER_2=src/boot/boot_2.asm
+OUTPUT_BOOT=build/bootloader/out_boot.o
+OUTPUT_BOOT_2=build/bootloader/out_boot_2.o
+
+compile_asm_bootloader:
+		@echo "Compile ASM files from bootloader"
+
+		@$(CASM) -f $(BIT) $(BOOTLOADER) -o $(OUTPUT_BOOT)
+		@$(CASM) -f $(BIT) $(BOOTLOADER_2) -o $(OUTPUT_BOOT_2)
+
+clean_bootloader:
+		@echo "Clean bootloader"
+
+		@rm -rf $(OUTPUT_BOOT)
+		@rm -rf $(OUTPUT_BOOT_2)
+
