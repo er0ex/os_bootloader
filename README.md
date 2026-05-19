@@ -31,5 +31,5 @@ Clone the repository and build the bootloader:
 
 ```bash
 git clone https://github.com/er0ex/os_bootloader.git
-cd os_bootloader
+cd os_bootloader/boot
 make
